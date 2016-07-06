@@ -18,4 +18,4 @@ the following commands are executed:
 #docker run : step 2
 mkdir -p logs
 
-docker run -t -p 8080:8080 --link mongo:mongo -v logs:/hygieia/logs --name hyapi -i devopsopen/docker-com-mongo
+docker run -t -p 8080:8080 --link mongo:mongo -v logs:/hygieia/logs --name hyapi -i devopsopen/docker-cov-hyapi
