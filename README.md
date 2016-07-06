@@ -9,7 +9,8 @@ start devopsopen/docker-com-mongo in another container with name of mongo,
 
 then use mongodb client to connect with the container and update dashboard database for hygieia api image.
 
-the commands are as following
+the following commands are executed:
+
  use db
  
  db.createUser({user: "db", pwd: "dbpass", roles: [{role: "readWrite", db: "dashboard"}]})
