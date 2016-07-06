@@ -6,3 +6,7 @@ FROM docker.io/capitalone/hygieia-api
 
 #Maintainer
 MAINTAINER Open DevOps Team <open.devops@gmail.com>
+
+#Environment variables
+ENV SPRING_DATA_MONGODB_HOST=localhost
+ENV SPRING_DATA_MONGODB_PORT=27017
