@@ -11,7 +11,7 @@ then use mongodb client to connect with the container and update dashboard datab
 
 the following commands are executed:
 
- use db
+ use dashboard
  
  db.createUser({user: "db", pwd: "dbpass", roles: [{role: "readWrite", db: "dashboard"}]})
 
