@@ -8,8 +8,8 @@ FROM docker.io/capitalone/hygieia-api
 MAINTAINER Open DevOps Team <open.devops@gmail.com>
 
 #Environment variables
-ENV SPRING_DATA_MONGODB_HOST=localhost
-ENV SPRING_DATA_MONGODB_PORT=27017
+#ENV SPRING_DATA_MONGODB_HOST=localhost
+#ENV SPRING_DATA_MONGODB_PORT=27017
 
 #Install Mongo
 RUN \
