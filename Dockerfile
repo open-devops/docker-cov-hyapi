@@ -17,3 +17,8 @@ RUN \
   echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' > /etc/apt/sources.list.d/mongodb.list && \
   apt-get update && \
   apt-get install mongodb-org-shell
+
+COPY init_hygiea_db.sh /hygieia/
+CMD  ./init_hygiea_db.sh && \ 
+   ./properties-builder.sh &&\
+  java -Djava.security.egd=file:/dev/./urandom -jar api.jar --spring.config.location=/hygieia/dashboard.properties
