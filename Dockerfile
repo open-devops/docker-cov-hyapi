@@ -19,6 +19,6 @@ RUN \
   apt-get install mongodb-org-shell
 
 COPY init_hygiea_db.sh /hygieia/
-CMD  ./init_hygiea_db.sh && \ 
+CMD  sh init_hygiea_db.sh && \ 
    ./properties-builder.sh &&\
   java -Djava.security.egd=file:/dev/./urandom -jar api.jar --spring.config.location=/hygieia/dashboard.properties
