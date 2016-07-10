@@ -14,7 +14,7 @@ mkdir -p logs
 
 docker run -t -p 8080:8080 --link mongo:mongo -v logs:/hygieia/logs --name hyapi -i devopsopen/docker-cov-hyapi
 
-the following commands are executed automately:
+the following commands will be executed automately:
 
 use mongodb client to connect with the container and update dashboard database for hygieia api image.
 
