@@ -1,4 +1,6 @@
-# docker-cov-hyapi
+[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?maxAge=2592000)](https://hub.docker.com/r/devopsopen/docker-cov-hyapi/)
+
+# Hygieia API Server
 COV Hygieia api Image for Open DevOps Pipeline
 
 #docker pull
